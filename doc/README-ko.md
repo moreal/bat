@@ -437,6 +437,11 @@ bat --config-file
 export BAT_CONFIG_PATH="/path/to/bat.conf"
 ```
 
+기본 설정 파일은 `--generate-config-file` 옵션으로 생성될 수 있습니다.
+```bash
+bat --generate-config-file
+```
+
 ### 포맷
 
 설정 파일은 명령어 인수들의 리스트 입니다. `bat --help`를 이용하여 가능한 옵션들과 값들을 확인해 볼 수 있습니다. 또, `#` 으로 주석을 추가할수도 있습니다. 
