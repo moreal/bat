@@ -341,8 +341,6 @@ ansible-galaxy install aeimer.install_bat
 cargo install --locked bat
 ```
 
-일부 플랫폼에서는 `llvm` 그리고/또는 `libclang-dev` 설치가 필요할 수도 있습니다. 
-
 ## 커스터마이즈
 
 ### 문법 강조 테마 
