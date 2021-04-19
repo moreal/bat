@@ -161,13 +161,15 @@ man 2 select
 ### On Ubuntu
 *... 그리고 기타 Debian 기반의 Linux 배포판들.*
 
-Ubuntu Eoan 19.10 혹은 Debian unstable sid 이후 버전 부터는 [Ubuntu용 `bat` 패키지](https://packages.ubuntu.com/eoan/bat)나 [Debian용 `bat` 패키지](https://packages.debian.org/sid/bat) 를 설치 할 수 있습니다. 
+`bat` 은 [Ubuntu](https://packages.ubuntu.com/eoan/bat) 그리고 [Debian](https://packages.debian.org/sid/bat) 패키지 릴리즈 프로세스을 진행하고 있고, Eoan 19.10 부터 Ubuntu 에서 사용할 수 있습니다. Debian 에서는 unstable "Sid" 브랜치에서만 사용할 수 있습니다.
+
+만약 설치되어 있는 Ubuntu/Debian 이 충분히 새로운 버전이라면 다음을 실행하면 됩니다:
 
 ```bash
 apt install bat
 ```
 
-만약 최근 릴리즈된 bat을 사용을 원하거나 buntu/Debian 예전 버전을 사용하는 경우, [릴리즈 페이지](https://github.com/sharkdp/bat/releases)에서 다음과 같이 `.deb` 패키지를 받아 설치 할 수도 있습니다:
+만약 패키지가 아직 사용하는 Ubuntu/Debian에 알려지지 않았거나 `bat`의 최신 버전을 원한다면, [릴리즈 페이지](https://github.com/sharkdp/bat/releases)에서 다음과 같이 `.deb` 패키지를 받아 설치 할 수도 있습니다:
 
 ```bash
 sudo dpkg -i bat_0.18.0_amd64.deb  # adapt version number and architecture
