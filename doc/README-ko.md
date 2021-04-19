@@ -326,7 +326,7 @@ ansible-galaxy install aeimer.install_bat
 
 ### From source
 
-`bat`의 소스를 직접 빌드하기 위해서는, Rust 1.37 이상이 필요하며 `cargo`를 이용해 빌드할 수 있습니다. 
+`bat`의 소스를 직접 빌드하기 위해서는, Rust 1.40 이상이 필요하며 `cargo`를 이용해 빌드할 수 있습니다.
 
 ```bash
 cargo install --locked bat
