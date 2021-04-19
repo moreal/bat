@@ -147,7 +147,7 @@ man 2 select
 새 커맨드에서 이 번들을 사용하려면, [`batman`](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)을 이용 할 수 있습니다. 
 
 
-참고 : [Manpage syntax](../assets/syntaxes/Manpage.sublime-syntax)는 이 저장소에서 개발되고 있으며, 아직 작업 중 입니다. 
+참고 : [Manpage syntax](../assets/syntaxes/02_Extra/Manpage.sublime-syntax)는 이 저장소에서 개발되고 있으며, 아직 작업 중 입니다. 
 
 #### `prettier` / `shfmt` / `rustfmt`
 
