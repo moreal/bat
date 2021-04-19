@@ -421,7 +421,7 @@ export BAT_PAGER="less -RF"
 
 ### 다크 모드
 
-macOS에서 다크 모드를 사용하고 있다면, OS 테마에 따라 다른 테마를 사용하도록 `bat`의 구성할 수 있습니다. 아래 코드는 라이트 모드에서는 `default` 테마를 다크모드에서는 `Github` 테마를 사용하는 방법입니다. 
+macOS에서 다크 모드를 사용하고 있다면, OS 테마에 따라 다른 테마를 사용하도록 `bat`의 구성할 수 있습니다. 아래 코드는 __다크 모드__에서는 `default` 테마를 __라이트 모드__에서는 `Github` 테마를 사용하는 방법입니다. 
 
 ```bash
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
