@@ -169,8 +169,11 @@ man 2 select
 apt install bat
 ```
 
-만약 이 방법으로 `bat`을 설치한다면, `batcat`로 실행파일이 설치 될 수 있습니다.
-`/usr/bin/bat`을 `/usr/bin/batcat`으로 symlink를 추가하면 이 때문에 발생할 수 있는 문제를 방지하는 데 도움이 됩니다.
+만약 이 방법으로 `bat`을 설치한다면, [다른 패키지와 충돌되는 이름이기 때문에](https://github.com/sharkdp/bat/issues/982) `bat` 대신 `batcat`로 실행파일이 설치 될 수 있습니다.
+`bat -> batcat` symlink나 alias를 설정하여 이 때문에 발생할 수 있는 문제를 방지하고 다른 배포판과 일관성을 유지할 수 있습니다.
+``` bash
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
 
 ### On Ubuntu
 
