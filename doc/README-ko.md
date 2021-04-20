@@ -293,14 +293,6 @@ scoop install bat
 
 [Visual C++ Redistributable 패키지](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)를 같이 설치해 주어야 합니다. 
 
-### Via Docker
-
-컨테이너에서 `bat`을 사용할 수 있는 [Docker image](https://hub.docker.com/r/danlynn/bat/)가 있습니다.: 
-```bash
-docker pull danlynn/bat
-alias bat='docker run -it --rm -e BAT_THEME -e BAT_STYLE -e BAT_TABS -v "$(pwd):/myapp" danlynn/bat'
-```
-
 ### From binaries
 
 [릴리즈 페이지](https://github.com/sharkdp/bat/releases)에서 다양한 환경을 위해 빌드된 버전들을 확인 할 수 있습니다. 정적 링크 바이너리들은 아카이브에서 파일 이름에 `musl` 이 포함 파일로 확인 할 수 있습니다. 
