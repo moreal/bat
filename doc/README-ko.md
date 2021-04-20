@@ -272,6 +272,10 @@ port install bat
 
 Windows에서 `bat`을 설치할 수 있는 몇 가지 옵션들이 있습니다. 먼저 `bat`을 설치 한 후, ["Windows에서 사용하기"](#Windows에서-사용하기) 참고하시기 바랍니다.  
 
+#### Prerequisites
+
+[Visual C++ Redistributable 패키지](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)를 같이 설치해 주어야 합니다.
+
 #### With Chocolatey
 
 [Chocolatey](https://chocolatey.org/packages/Bat)를 이용해 `bat`을 설치할 수 있습니다: 
@@ -285,7 +289,6 @@ choco install bat
 ```bash
 scoop install bat
 ```
-[Visual C++ Redistributable 패키지](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)를 같이 설치해 주어야 합니다. 
 
 #### From prebuilt binaries:
 
@@ -440,6 +443,10 @@ bat --generate-config-file
 ##  Windows에서 사용하기
 
 `bat` 대부분의 경우 Windows에서 기본적으로 잘 작동하지만, 일부 기능에는 추가 적인 구성이 필요할 수 있습니다.
+
+### Prerequisites
+
+[Visual C++ Redistributable 패키지](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)를 같이 설치해 주어야 합니다.
 
 ### 페이징 
 
