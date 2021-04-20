@@ -301,34 +301,6 @@ docker pull danlynn/bat
 alias bat='docker run -it --rm -e BAT_THEME -e BAT_STYLE -e BAT_TABS -v "$(pwd):/myapp" danlynn/bat'
 ```
 
-### Via Ansible
-
-[Ansible](https://www.ansible.com/)을 사용해 `bat`을 설치할 수 있습니다:
-
-```bash
-# Install role on local machine
-ansible-galaxy install aeimer.install_bat
-```
-
-```yaml
----
-# Playbook to install bat
-- host: all
-  roles:
-    - aeimer.install_bat
-```
-
-- [Ansible Galaxy](https://galaxy.ansible.com/aeimer/install_bat)
-- [GitHub](https://github.com/aeimer/ansible-install-bat)
-
-다음 배포판들에서 동작합니다: 
-- Debian/Ubuntu
-- ARM (eg. Raspberry PI)
-- Arch Linux
-- Void Linux
-- FreeBSD
-- MacOS
-
 ### From binaries
 
 [릴리즈 페이지](https://github.com/sharkdp/bat/releases)에서 다양한 환경을 위해 빌드된 버전들을 확인 할 수 있습니다. 정적 링크 바이너리들은 아카이브에서 파일 이름에 `musl` 이 포함 파일로 확인 할 수 있습니다. 
