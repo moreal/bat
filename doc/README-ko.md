@@ -57,7 +57,7 @@
 > bat src/*.rs
 ```
 
-stdin에서 읽고, 자동으로 맞는 문법 강조 적용하기 
+stdin에서 읽고, 자동으로 맞는 문법 강조 적용하기 (참고로, 이것은 일반적으로 `#!/bin/sh`와 같은 shebang을 통해 파일의 첫 줄에서 문법을 결정할 수 있는 경우에만 동작합니다)
 
 ```bash
 > curl -s https://sh.rustup.rs | bat
