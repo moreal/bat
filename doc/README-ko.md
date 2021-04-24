@@ -563,6 +563,6 @@ cargo install --locked --force
 ## 라이센스
 Copyright (c) 2018-2021 [bat-developers](https://github.com/sharkdp/bat).
 
-`bat`는 MIT 라이센스 및 Apache 라이센스 2.0의 조건에 따라 배포됩니다.  
+`bat`는 당신의 선택에 따라 MIT 라이센스 또는 Apache 라이센스 2.0의 조건에 따라 사용할 수 있습니다.  
 
 라이센스 세부사항은 [LICENSE-APACHE](LICENSE-APACHE)와 [LICENSE-MIT](LICENSE-MIT)를 참조하세요. 
