@@ -307,6 +307,8 @@ scoop install bat
 cargo install --locked bat
 ```
 
+man 페이지나 shell completion 파일 같은 추가적인 파일들은 이 방법으로는 설치 될 수 없음을 참고하세요. 그것들은 `cargo`에 의해 생성되고 `build` 아래 cargo 타겟 폴더에서 사용할 수 있습니다.
+
 ## 커스터마이즈
 
 ### 문법 강조 테마 
