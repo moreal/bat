@@ -320,6 +320,23 @@ bat --list-themes | fzf --preview="bat --theme={} --color=always /path/to/file"
 ```
 `bat`의 기본 테마는 어두운 배경색 터미널에 적합합니다. 만일 밝은 배경색을 사용할 경우에는  `GitHub` 이나 `OneHalfLight` 과 같은 테마가 더 잘 어울립니다. 아래 [새로운 테마 추가하기](#새로운-테마-추가하기)에 따라 커스텀 테마를 사용할수도 있습니다.
 
+### 8 비트 테마
+
+`bat`은 항상 [8 비트 색상](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors)을 사용하는 네 개의 테마를 가지고 있습니다.
+트루컬러 지원이 가능한 경우에도:
+
+- `ansi-dark` 는 어두운 배경의 어느 터미널에서나 괜찮아 보입니다. 오직 3-bit 컬러만 사용합니다: black, red,
+  green, yellow, blue, magenta, cyan, 그리고 white.
+- `ansi-light` 는 `ansi-dark`와 비슷하지만 밝은 배경의 터미널들을 위한 것입니다.
+- `base16` 은 [base16](https://github.com/chriskempson/base16) 터미널 테마들을 위해 디자인 되었습니다. [base16 styling guidelines](https://github.com/chriskempson/base16/blob/master/styling.md)을 따라 3-bit 컬러에 밝기를 더한 4-bit 컬러를 사용합니다.
+- `base16-256` 은 [base16-shell](https://github.com/chriskempson/base16-shell)을 위해 디자인 되었습니다.
+특정 밝은 색들을 16에서 21까지의 8-bit 컬러들로 대체합니다. 256-color 터미널을 가지고 있지만 base16-shell을 사용하고 있지 않다면 이것을 간단히 사용하지 마세요.
+
+비록 이 테마들은 제한 되어 있지만, 그들은 트루컬러 테마들을 넘는 두 가지 장점을 가지고 있습니다:
+
+- 그들은 3-bit 혹은 4-bit 컬러를 사용하는 다른 터미널 소프트웨어들과 더 잘 조화를 이룹니다.
+- 터미널 테마를 변경하면 이미 화면에 있는 `bat` 출력이 일치하도록 업데이트됩니다.
+
 ### 출력 스타일
 
 `--style` 옵션을 이용하여 `bat`의 출력 스타일을 변경 할 수 있습니다. 예를 들어,  `--style=numbers,changes`는 Git 변경분과 라인 넘버에 대해서만 출력하며 눈금과 파일 헤더가 표시되지 않습니다. `BAT_STYLE` 환경 변수로 정의하여 계속해서 사용하거나`bat`의 [설정 파일](#설정-파일)을 사용할 수도 있습니다.
@@ -488,7 +505,7 @@ bat() {
 
 ### 터미널과 색상
 
-`bat`은 터미널 트루컬러 지원 여부와 상관없이 동작합니다. 하지만, 문법 강조 테마의 색상이 8-bit 컬러에는 최적화 되어 있지 않고 있으며, 24-bit 트루컬러 지원하는 터미널 사용하는 것을 적극 권장합니다.(`terminator`, `konsole`, `iTerm2`, ...). [이 글](https://gist.github.com/XVilka/8346728)에서 24-bit 트루컬러 지원하는 터미널들을 찾아보실 수 있습니다. 
+`bat`은 터미널 트루컬러 지원 여부와 상관없이 동작합니다. 하지만, 대부분의 문법 강조 테마의 색상이 8-bit 컬러에는 최적화 되어 있지 않습니다. 24-bit 트루컬러 지원하는 터미널 사용하는 것을 적극 권장합니다(`terminator`, `konsole`, `iTerm2`, ...). 혹은 제한된 색상 셋을 위해 디자인된 8-bit 테마들 중 하나를 사용하세요. [이 글](https://gist.github.com/XVilka/8346728)에서 24-bit 트루컬러 지원하는 터미널들을 찾아보실 수 있습니다. 
 
 사용하고 있는 터미널에서 `COLORTERM`을 `truecolor` 혹은
 `24bit`으로 설정 되어있는지 확인하세요. 만약 아니라면, `bat`은 24-bit escape sequence를 지원되는지 여부를 판단 할 수 없습니다. (그리고 8-bit 색상으로 돌아갑니다.) 
