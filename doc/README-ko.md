@@ -432,16 +432,26 @@ alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /de
 
 ### 파일 문법
 
-`--map-syntax`를 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다. 정확한 파일명을 일치시키기 위해서 glob 패턴을 사용합니다.
+`--map-syntax` 옵션을 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다.
+
+glob 패턴 매칭을 사용하고 전체 경로와 파일 이름에 일치시킵니다.
+
+이렇게 사용하세요:
+
+```bash
+bat --map-syntax='PATTERN:SYNTAX' file-name
+```
 
 예를 들어:
 ```bash
-# Use INI syntax for .conf files
---map-syntax "*.conf:INI"
+# Using `INI` file syntax highligting when opening a file with extension `.conf`.
+bat --map-syntax='*.conf:INI' file.conf
 
-# Use ".gitignore"-style highlighting for ".ignore" files
---map-syntax ".ignore:Git Ignore"
+# Using `Git Ignore` file syntax highlighting for ".ignore" files
+bat --map-syntax='.ignore:Git Ignore' .ignore
 ```
+
+가능한 모든 파일 문법 타입을 보기 위해 `bat --list-languages`을 이용할 수 있습니다.
 
 ## 설정 파일
 
