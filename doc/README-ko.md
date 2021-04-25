@@ -553,6 +553,7 @@ cargo install --path . --locked --force
 
 - [sharkdp](https://github.com/sharkdp)
 - [eth-p](https://github.com/eth-p)
+- [keith-hall](https://github.com/keith-hall)
 
 ## 프로젝트 목표와 대안들
 
