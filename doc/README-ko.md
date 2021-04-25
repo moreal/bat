@@ -472,6 +472,20 @@ bat --generate-config-file
 --map-syntax "*.conf:INI"
 ```
 
+### 파일 문법
+
+`--map-syntax`를 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다. 예를 들어, 어떤 것들은 그렇지만 모든 `.conf` 파일이 `INI` 문법을 가진 것은 아니므로 기본값이 될 수 없습니다.
+그러나 원하는 경우 설정할 수 있습니다.
+
+예를 들어:
+```bash
+# Use INI syntax for .conf files
+--map-syntax "*.conf:INI"
+
+# Use ".gitignore"-style highlighting for ".ignore" files
+--map-syntax ".ignore:Git Ignore"
+```
+
 ##  Windows에서 사용하기
 
 `bat` 대부분의 경우 Windows에서 기본적으로 잘 작동하지만, 일부 기능에는 추가 적인 구성이 필요할 수 있습니다.
