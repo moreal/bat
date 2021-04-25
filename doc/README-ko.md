@@ -255,21 +255,15 @@ zypper을 이용해 `bat`을 설치할 수 있습니다:
 zypper install bat
 ```
 
-### On Linux
+### On macOS (or Linux) via Homebrew
 
-[Homebrew](https://formulae.brew.sh/formula-linux/bat)를 이용하여 `bat`을 설치할 수 있습니다:
-
-```bash
-brew install bat
-```
-
-### On macOS
-
-[Homebrew](http://braumeister.org/formula/bat)를 이용해 `bat`을 설치할 수 있습니다: 
+[Homebrew on macOS](http://braumeister.org/formula/bat) 또는 [Homebrew on Linux](https://formulae.brew.sh/formula-linux/bat)를 이용하여 `bat`을 설치할 수 있습니다:
 
 ```bash
 brew install bat
 ```
+
+### On macOS via MacPorts
 
 또는 [MacPorts](https://ports.macports.org/port/bat/summary)를 사용할 수도 있습니다: 
 
