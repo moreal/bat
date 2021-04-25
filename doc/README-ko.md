@@ -430,6 +430,19 @@ macOS에서 다크 모드를 사용하고 있다면, OS 테마에 따라 다른 
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 ```
 
+### 파일 문법
+
+`--map-syntax`를 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다.
+
+예를 들어:
+```bash
+# Use INI syntax for .conf files
+--map-syntax "*.conf:INI"
+
+# Use ".gitignore"-style highlighting for ".ignore" files
+--map-syntax ".ignore:Git Ignore"
+```
+
 ## 설정 파일
 
 `bat` 설정 파일로 커스터마이즈 할 수 있습니다. 파일의 위치는 운영 체제에 따라 다릅니다. 아래 커맨드를 통해 시스템의 기본 경로를 알 수 있습니다. 
@@ -470,20 +483,6 @@ bat --generate-config-file
 
 # Use INI syntax for .conf files
 --map-syntax "*.conf:INI"
-```
-
-### 파일 문법
-
-`--map-syntax`를 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다. 예를 들어, 어떤 것들은 그렇지만 모든 `.conf` 파일이 `INI` 문법을 가진 것은 아니므로 기본값이 될 수 없습니다.
-그러나 원하는 경우 설정할 수 있습니다.
-
-예를 들어:
-```bash
-# Use INI syntax for .conf files
---map-syntax "*.conf:INI"
-
-# Use ".gitignore"-style highlighting for ".ignore" files
---map-syntax ".ignore:Git Ignore"
 ```
 
 ##  Windows에서 사용하기
