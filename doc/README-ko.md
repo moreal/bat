@@ -467,6 +467,9 @@ bat --generate-config-file
 
 # Use ".gitignore"-style highlighting for ".ignore" files
 --map-syntax ".ignore:Git Ignore"
+
+# Use INI syntax for .conf files
+--map-syntax "*.conf:INI"
 ```
 
 ##  Windows에서 사용하기
