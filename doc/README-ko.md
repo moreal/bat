@@ -432,11 +432,11 @@ alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /de
 
 ### 파일 문법
 
-`--map-syntax` 옵션을 이용하여 파일의 기본 문법을 변경하도록 `bat`을 설정할 수 있습니다.
+`--map-syntax` 옵션을 이용하여 파일의 기본 문법 연결을 변경하도록 `bat`을 설정할 수 있습니다.
 
-glob 패턴 매칭을 사용하고 전체 경로와 파일 이름에 일치시킵니다.
+glob 패턴 매칭을 지원하고 전체 경로와 파일 이름에 일치시킵니다.
 
-이렇게 사용하세요:
+이렇게 사용할 수 있습니다:
 
 ```bash
 bat --map-syntax='PATTERN:SYNTAX' file-name
